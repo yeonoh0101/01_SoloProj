@@ -10,7 +10,7 @@ const options = {
 function MovieList(searchTerm = "") {
   // MovieList라는 함수를 선언하고 'searchTerm'이라는 매개변수를 받는다.('searchTerm'은 검색어로 사용이 되는데 기본값은 빈 문자열이다.)
   let element = document.querySelector("#cards"); // html 코드에서 id가 cards인 요소를 찾아 element라는 변수에 할당한다.
-  element.textContent = ""; // element에 담긴 요소들의 내용을 비웁니다.
+  element.innerHTML = ""; // element에 담긴 요소들의 내용을 비웁니다.
 
   let apiUrl =
     "https://api.themoviedb.org/3/movie/top_rated?language=-US&page=1"; // apiUrl이라는 변수에 TMDB api주소를 할당한다.
